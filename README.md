@@ -1,4 +1,4 @@
-# LITA-Final-Project-CustomerData
+# LITA-Final-Project
 ## Project Tiltle: Customer Segment For Subscription Service
 ### Project Overview
 ---
@@ -74,6 +74,8 @@ This involved the exploration of the data to answer certain question  such as;
 
 ### Formula Used
 ---
+These are formular/queries used to analyze and generate this report, starting from Microsoft Excel, SQL Server, and Power BI respectively:
+
 ```Microsoft Excel
 Subscription duration= DAYS(subscription end-subscription start)
 ```
@@ -146,11 +148,168 @@ DateTable = CALENDAR(MIN(CustomerData[SubscriptionStart]),MAX(CustomerData[Subsc
 
 Year = YEAR(DateTable[Date])
 ```
+
 ### Data Analysis, Visualization, and Insights
 ---
+### 1. Total Reveue
+---
+Total Revenue for 2022 AND 2023
+---
+![total rev](https://github.com/user-attachments/assets/66c78754-0ce8-422f-a014-09e6a2c97e13)
+
+Filtered Total Revenue for 2022
+---
+![total rev 2022](https://github.com/user-attachments/assets/f3cb81d8-f3fe-4f69-b9a5-8fe952a07414)
+
+Filtered Total Revenue for 2023
+---
+![total rev 2023](https://github.com/user-attachments/assets/594bd165-d305-4686-8cd6-c9847fb2edb1)
+
+Insights
+---
+A. Key Observations:
+- The overall observation in the total revenue shows that there was a significant decline in revenue generation across the years. In 2022 the total revenue generated is approximately 41 million which is higher than the total revenue generated in 2023 that is approximately 27 million.
+
+B. Interpretation and Implications:
+- The total revenue for the  year 2022 shows favorable market conditions and economic climate. However the decline in the total revenue over the years indicates the need for tactical assessments of services provided. There is a need to investigate the cause of this decline which may be market or product competition and change in customer behavior.
+- There  is a need to focus on strategies that will increase subscription rate such as marketing and branding efforts, good customer care relationships and service or product pricing.
+
+C. Conclusion and Recommendation:
+-  As seen from the data, there is a huge decline in revenue generation in 2023. This suggests the need for the service providing company to analyze market conditions and economic trends to improve subscription rate.
+
+### 2. Revenue by subscription Type and Region
+---
+Pivot Table
+---
+
+![pivot t rev by sub type](https://github.com/user-attachments/assets/2dfec048-9a80-4a5e-830f-7f4ceaea4fa8)
+---
+
+![pivot t rev by reg](https://github.com/user-attachments/assets/9243eb3f-ae05-4159-b4df-e418294c3407)
+---
+
+Filtered Revenue by Subscription Type for Year 2022
+---
+![rev by sub typ 2022](https://github.com/user-attachments/assets/9be6eafb-58bd-4023-a6e5-34fbc8037157)
+
+Filtered Revenue by Susbscription Type for Year 2023
+---
+![sum rev by sub t 2023](https://github.com/user-attachments/assets/27da6941-5924-4beb-9531-a556e47f0154)
+
+Filtered Revenue by Region for Year 2022
+---
+![rev by reg 2022](https://github.com/user-attachments/assets/dfc58143-fcbf-4530-be1a-ae327388ec01)
+
+Filtered Revenue by Region for Year 2023
+---
+![rev by reg 2023](https://github.com/user-attachments/assets/a807235f-1398-4875-b34d-0f7f6b592093)
+
+Insights
+---
+A. Key observation:
+- Revenue by subscription type : the data shows that the basic subscription type with a total revenue of approximately 34 million (33,776,735) has the highest revenue for both years,accounting for 50.1% of the total revenue generated. The premium subscription type with the second highest revenue of approximately 17 million(16,899,064) accounting for 25.02% of total revenue generated slightly outperforming the standard subscription type with a total of 17 million(16,864,376) accounting for 24.97% of total revenue generation for both years. However there is a significant decline in revenue generation in 2023 by all 3 subscription types as seen from the filtered chart.
+  
+- Revenue by Region: evaluating the regional performance for the year 2022 base on revenue generated shows that  the Eastern region generated the highest total revenue of 10,242,555m accounting for 25.27% of total revenue generated that year slightly outperforming the other regions. The southern region had a total revenue of 10,126,800m accounting for 24.98% of revenue generated , the Northern region has a revenue of 10,089,951 accounting for 24.89% of revenue generated, the  Western region is the least in generating revenue with a value 10, 079,132m accounting for 24.86% of revenue generated. However in 2023 all regions experienced a significant decline in revenue generated but the East still remained the highest revenue generator.
+
+B. Interpretation and Implication:
+- The decline in revenue generation by the various subscription types in 2023 suggest unfavorable market and economic climate conditions, change in consumer demand and preferences which could be why customers reduced their subscription rate. The need to focus on underperforming subscription types such as the standard subscription type  by offering customer Centric services, leveraging on technology and digital transformation such as automation which can help streamline processes, reduce costs, and improve service quality. Faster, attracts and retains customers leading to increased revenue generation.
+  
+- The high performance of the East region in terms of revenue generation suggests a favorable market conditions and economic climate and a consumer care reletionship and experiences. Expanding marketing efforts such as digital Marketing and social media engagement putting the service provided in limelight in the underperforming region can help balance revenue distribution.
+
+C. Conclusion:
+- The data shows a decline in revenue generation by both regions and subscription types. This culminates the need for the service providing company to analyze market and economic conditions and also implement strategies suggested to increase the rate of subscription and in turn increase revenue generation most especially in the North  and west  regions.
+
+### 3. Popular subscription type by Customer ID
+---
+Filtered Chart for Year 2022
+---
+![popular sub type by customer no 2022](https://github.com/user-attachments/assets/dbe669ec-e72b-475b-90b2-a9d0043e2aec)
+
+Filtered Chart for Year 2023
+---
+![popular sub by no of cust 2023](https://github.com/user-attachments/assets/c888afea-fd9e-4dc1-992f-4983e519a0e5)
+
+Filtered Visaul for Number of Customers Per Region for Year 2023
+---
+![no of cust regions2023](https://github.com/user-attachments/assets/d85a5b53-11cf-428c-820e-b062aefc010b)
+
+Filtered Visaul for Number of Customers Per Region for Year 2022
+---
+![no of custin regions 2022](https://github.com/user-attachments/assets/12bfddd5-1801-4213-a672-4fcbd9e7bafb)
+
+Insights
+---
+A. Key Observations:
+- the data showed that there are 20 distinct customers who repeatedly subscribed to a particular service or product. The most preferred  subscription type by customers as seen from the data is the basic subscription type with a total   6 distinct  customers in 2022 however there is a decrease in the number of subscribers in 2023 with only 4 customers subscribing to it. The Premium subscription type came second  and the standard subscription type is the least. All the various subscription types experience a decrease in the number of subscribers in 2023.
+
+B. Interpretation and Implications:
+- The maintenance of the most preferred subscription type which is the basic subscription type may be due to factors like fair pricing and consumer behavior, Enhanced Service Delivery, Speed and Quality. The underperformance of the remaining subscription types may suggest  unfavorable market conditions, pricing pressures and increased market competitors.
+
+c. Conclusion: 
+- The data shows the most preferred subscription type being the Basic subscription type with a decrease in the number of subscribers across the years. This indicates a need for the company to analyze market conditions, customer behavior and improve marketing strategies to decrease competitors which in turn will increase subscription rate. The standard subscription type should be reviewed in terms of pricing and services delivered.
+
+### 4. Average Subscription Duration 
+---
+Filtered Visual for Year 2022
+---
+![avg sub d 2022](https://github.com/user-attachments/assets/c3c3ea10-ef31-441b-8349-3fcc2c4877df)
+
+Filtered Visual for Year 2023
+---
+![avg s 2023](https://github.com/user-attachments/assets/6a8b4c9b-df24-403d-9c48-3d30e709c7de)
+
+Filtered Chart Average Subscription Duration by Customers for Year 2022
+---
+![cust id by sub d 2022](https://github.com/user-attachments/assets/cb89b254-6ef0-4a49-bc29-e9d35abed51e)
+
+Filtered Chart Average Subscription Duration by Customers  for Year 2023
+---
+![cus id by sub d 2023](https://github.com/user-attachments/assets/2238b006-d740-4f22-aa28-a739d43b233a)
+
+Insights
+---
+A. Key Observations:
+- Insights from the data showed that the average subscription duration is 365 days (12 months). However the average subscription duration filtered for 2023 is 366 days (12 months 1 day)
+- The average subscription duration by number of customers showed that 7 (87.5%)customers had an average subscription duration of 366 days while 1(12.5%) had 365 days. In 2023, while in 2022, a total of 12 customers accounting to 100% of the total number of customers had an average  duration of 365 days.
+  
+B. Implications:
+- The change in the value of the average subscription duration in 2023 to 2024 could be due to  climate change affecting the numbers of days in a year. This could be conditions such as a leap year.
+
+C. Conclusion:
+- Data shows that the average subscription duration is 365 days with a slight increase in 2023 making it a total of 366 days. This could be mainly due to climate factors or conditions.
+
+
+### 5. Subscription Cancellations and  Customer retention
+---
+Filtered Card Visuals for number of Current and Cancelled Subscription for Year 2022
+---
+![no of cur and can sub 2022](https://github.com/user-attachments/assets/6638b642-d5cb-451f-a8e4-d2a4a2388927)
+
+Filtered Card Visuals for number of Current and Cancelled Subscription for Year 2023
+---
+![no of can and cur sub 2023](https://github.com/user-attachments/assets/74be07b7-f3a8-44a2-8911-0251d9f6cf50)
+
+Insights
+---
+A. Key observations:
+- The  cumulative  number of canceled subscription for both years is approximately 15k  (15,175) while that of active subscription is approximately 19k (18,612). However there is a decline in both the numbers of active and canceled subscriptions for the year 2023.
+- The subscription cancellation by region showed only 3 regions had canceled subscription these are; North, South and West  with the exception of the east region which is a great generator of revenue. In 2022, the south accounted for 60.21% of the total subscription cancelation, the North accounted for 20.03% of total subscription cancellations and the West region which is the least accounted for about 19.76% of the total canceled subscriptions. However in 2023 only two regions(North and West ) had canceled subscriptions with a percentage of 50 each.
+
+B.Interpretation and Implications:
+- The  decline in the number of active subscribers in 2023  indicates a need for strategizing  business policies. The need for tactical assessment of the cause of decline which may be due to changes in customer behavior, poor customer experiences and support, unmet expectations and lack of percieved values. Other reasons could be market conditions such as increased competition and economic climate. Therefore there is a need to engage in effective customer retention strategies like offering retention incentives such as discount, loyalty rewards and personalized recommendations which can keep customers motivated to keep subscribing. Also increase marketing and branding efforts, streamline services provided to fit into the cultural and social trends of the regions.
+- The customer retention rate for both years shows a 55% retention, indicating a positive and favorable business growth as this accounts for more than half of the 100% retention rate.
+- The lack of cancellation in the southern region in 2023 showed that the region thrived due to favorable market conditions,  the high cancellation rate in the North and West region indicates that there is need for critical assessment of  how business procedures are carried out in those regions, this could be poor customer experiences and relationship which needs to be improved.
+
+C. Conclusion:
+- There is a  decrease in the number of active subscribers and the constant cancellation in the Northern and Western regions which indicates the need for analyzing  market and economic conditions and also implement strategies suggested to boost customer retention and subscription rate. 
+
+ 
 
 
 
+
+
+  
 
 
 
